@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le Palmier/Carte</title>
+    <link rel="stylesheet" href="../css/histoire.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="header-nav" >
+                <div class="header-logo">
+                    <img src="../photo/pngtree-palm-tree-logo-design-illustration-png-image_6606219.png" class="logo">                    
+                </div>
+                <div class="header-menu">
+                    <ul>
+                         <li><a href="../html/indexx.html">Accueil</a></li>
+                        <li><a href="../html/carte.html" >Carte</a></li>
+                        <li><a href="../html/indexx.html#main-localisation">Nous trouver</a></li>
+                        <li><a href="../html/indexx.html#footer-information">Coordonnées</a></li>
+                        <li><a href="../html/histoire.html" class="active">Notre histoire</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="main-paragraphe">
+            <p>Le Palmier est un restaurant tunisien installé au 42 rue Vacon, en plein centre de Marseille, à deux pas du Vieux-Port. L’histoire de ce lieu commence en 2012, quand un passionné de cuisine traditionnelle décide d’ouvrir un établissement à taille humaine, avec pour objectif de faire découvrir les saveurs authentiques du Maghreb dans une ambiance simple et conviviale. À l’origine, l’idée était de créer un espace à la fois chaleureux et accessible, où l’on pourrait déguster un couscous bien servi, un tajine mijoté, ou encore une brick croustillante, sans chichis, comme à la maison. Très vite, Le Palmier devient une adresse prisée du quartier, notamment pour ses portions généreuses, ses prix abordables et son atmosphère familiale. Installé dans une rue ancienne et commerçante de Marseille, le restaurant s’inscrit dans le paysage local, au milieu des épiceries orientales, des boucheries halal et des cafés traditionnels. Au fil des années, il se développe doucement, gardant toujours la même ligne de conduite : la qualité, l’accueil, et la fidélité aux recettes transmises de génération en génération. Avec sa petite terrasse, ses horaires étendus jusque tard le soir, et son fameux thé à la menthe servi brûlant avec une pâtisserie maison, Le Palmier s’impose peu à peu comme une halte incontournable pour les habitants du centre-ville comme pour les visiteurs. Aujourd’hui, plus de dix ans après son ouverture, le restaurant continue de faire vivre cette tradition culinaire et familiale, dans un Marseille en perpétuel mouvement, mais toujours attaché à ses racines méditerranéennes.</p>
+        </div>
+    </main>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Créer le menu burger s'il n'existe pas
+    const headerNav = document.querySelector('.header-nav');
+    const headerMenu = document.querySelector('.header-menu');
+    
+    // Vérifier si le burger menu existe déjà
+    let burgerMenu = document.querySelector('.burger-menu');
+    
+    if (!burgerMenu) {
+        // Créer le menu burger
+        burgerMenu = document.createElement('div');
+        burgerMenu.className = 'burger-menu';
+        burgerMenu.innerHTML = '<span></span><span></span><span></span>';
+        
+        // L'insérer après le logo
+        const headerLogo = document.querySelector('.header-logo');
+        headerLogo.parentNode.insertBefore(burgerMenu, headerLogo.nextSibling);
+    }
+    
+    // Toggle du menu burger
+    burgerMenu.addEventListener('click', function() {
+        burgerMenu.classList.toggle('active');
+        headerMenu.classList.toggle('active');
+    });
+    
+    // Fermer le menu en cliquant sur un lien
+    const menuLinks = document.querySelectorAll('.header-menu a');
+    menuLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            burgerMenu.classList.remove('active');
+            headerMenu.classList.remove('active');
+        });
+    });
+});
+
+// Script pour changer le style de la navbar au scroll
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    const headerNav = document.querySelector(".header-nav");
+    if (!headerNav) return;
+
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+        headerNav.classList.add("scrolled");
+    } else {
+        headerNav.classList.remove("scrolled");
+    }
+}
+</script>
+
+</body>
+</html>
