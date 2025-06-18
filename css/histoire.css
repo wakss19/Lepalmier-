@@ -97,13 +97,13 @@ body, html {
 /* Style pour le carrousel */
 
 .main-paragraphe{
-    padding: 10px;
+    padding: 0px;
     background-color: #5a1a0a;
     color: white;
-    font-size: 1rem;
+    font-size: 15px;
     line-height: 1.5;
     text-align: center;
-    margin-top: 15%;
+    margin-top: 20%;
 }
 
 
