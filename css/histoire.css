@@ -97,16 +97,19 @@ body, html {
 /* Style pour le carrousel */
 
 .main-paragraphe{
-    padding: 0px;
-    background-color: #5a1a0a;
     color: white;
-    font-size: 15px;
+    font-size: 1rem;
     line-height: 1.5;
     text-align: center;
-    margin-top: 20%;
+    margin-top: 110px;
 }
 
-
+.main-image img.photo-animé {
+    height: 10%;
+    width: auto;
+    display: block;
+    max-width: 100%;
+}
 .fond-pc {
   display: none;
 }

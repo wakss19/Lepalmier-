@@ -122,7 +122,7 @@ body, html {
   height: 100vh; /* 👈 occupe tout l'écran */
   width: 100%;
   overflow: hidden;
-  margin-top: ; /* remove gap between nav and background */
+  margin-top: 100px; /* remove gap between nav and background */
 }
 
 .main-fond img {
@@ -245,14 +245,14 @@ background-color: #e5e4e2;
 
 
 
-.footeradresse{
+
 .footer-presentation ul li a:hover {
     color: #421701 !important;
     text-decoration: underline !important;
     cursor: pointer !important;
     pointer-events: auto !important;
 }
-}
+
 
 .footer-mentionlegale{
     color: #421701;
@@ -633,7 +633,7 @@ font-size: 1.2rem;
 @media (max-width: 480px) { 
     .header-nav {
         padding: 5px 10px;
-        margin-top: 0%;
+        margin-top: 0px;
     }
 
     .header-logo img.logo {
