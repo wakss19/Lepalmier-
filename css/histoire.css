@@ -106,11 +106,15 @@ body, html {
 }
 
 .main-image img.photo-animé {
-    height: 10%;
-    width: auto;
+    width: 90%; 
+    max-width: 350px; 
+    height: 250px ;
+    object-fit: cover;
+    margin: 20px auto;
     display: block;
-    max-width: 100%;
+    border-radius: 10px;
 }
+
 .fond-pc {
   display: none;
 }
@@ -452,4 +456,28 @@ font-size: 1.2rem;
   .caroussel {
     margin-top: 100px;
   }
+}
+
+@media screen and (min-width: 768px) {
+    .main-image img.photo-animé {
+        width: 90%; /* Même largeur sur PC */
+        max-width: 350px; /* Même taille max sur PC */
+        height: 250px; /* Même hauteur sur PC */
+        object-fit: cover;
+        margin: 20px auto;
+        display: block;
+        border-radius: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-image img.photo-animé {
+        width: 90%; /* Même largeur sur mobile */
+        max-width: 350px; /* Même taille max sur mobile */
+        height: 250px; /* Même hauteur sur mobile */
+        object-fit: cover;
+        margin: 20px auto;
+        display: block;
+        border-radius: 10px;
+    }
 }
