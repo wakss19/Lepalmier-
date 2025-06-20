@@ -155,17 +155,68 @@ background-color: #e5e4e2;
     pointer-events: auto !important;
 }
 
-.btnfooter{
-    background-color:#e5e4e2 ;
-    border: none;
+.btnfooter {
+    background-color: #e5e4e2;
+    border: none !important;
+    outline: none !important;
     border-radius: 10px;
-    box-shadow: rgb(255, 0, 0);
-    color :black;
+    box-shadow: none !important;
+    color: black;
+    margin-right: 30px;
+    padding: 8px 12px;
+    cursor: pointer;
 }
-.btnfooter:hover{
-    color :#5a1a0a ;
-    border: none;
+
+.btnfooter:hover {
+    color: #5a1a0a;
+    border: none !important;
+    outline: none !important;
     border-radius: 10px;
+}
+
+.btnplan {
+    background-color: #e5e4e2;
+    border: none !important;
+    outline: none !important;
+    border-radius: 10px;
+    box-shadow: none !important;
+    color: black;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+.btnplan:hover {
+    color: #5a1a0a;
+    border: none !important;
+    outline: none !important;
+    border-radius: 10px;
+}
+
+/* Pour les boutons dans footeradresse */
+.footeradresse button {
+    background-color: #e5e4e2;
+    border: none !important;
+    outline: none !important;
+    border-radius: 10px;
+    box-shadow: none !important;
+    color: black;
+    padding: 8px 12px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.footeradresse button:hover {
+    color: #5a1a0a;
+    border: none !important;
+    outline: none !important;
+}
+
+/* Supprime les bordures au focus */
+.btnfooter:focus, .btnplan:focus, .footeradresse button:focus {
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+ color :black;
 }
 .copyright {
     font-size: 0.7rem;
