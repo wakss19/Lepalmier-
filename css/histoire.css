@@ -373,6 +373,11 @@ font-size: 1.2rem;
     }
 }
 
+.footeradresse{
+    background-color: #e5e4e2;
+    text-align: center;
+}
+
 @media (max-width: 480px) { 
     .header-nav {
         padding: 5px 10px;
