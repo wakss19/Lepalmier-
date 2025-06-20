@@ -301,9 +301,7 @@ background-color: #e5e4e2;
     border: none !important;
     outline: none !important;
     border-radius: 10px;
-}
-
-.btnplan {
+}tnplan {
     background-color: #e5e4e2;
     border: none !important;
     outline: none !important;
@@ -357,6 +355,8 @@ background-color: #e5e4e2;
     text-align: center;
 }
 
+
+.b
 .caroussel {
     position: relative;
     max-width: 400px;
