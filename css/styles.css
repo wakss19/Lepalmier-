@@ -655,7 +655,7 @@ font-size: 1.2rem;
   height: 178%;
   object-fit: contain;
   object-position: center;
-  margin-top: -290px;
+  margin-top: -90%;
   padding-top: -50px;
   z-index: 1;
   position: absolute;
@@ -684,7 +684,7 @@ font-size: 1.2rem;
 @media (max-width: 480px) { 
     .header-nav {
         padding: 5px 10px;
-        margin-top: 0px;
+        margin-top: 0%;
     }
 
     .header-logo img.logo {
