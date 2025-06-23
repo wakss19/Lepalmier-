@@ -301,7 +301,8 @@ background-color: #e5e4e2;
     border: none !important;
     outline: none !important;
     border-radius: 10px;
-}tnplan {
+}
+.btnplan {
     background-color: #e5e4e2;
     border: none !important;
     outline: none !important;
@@ -336,6 +337,12 @@ background-color: #e5e4e2;
     color: #5a1a0a;
     border: none !important;
     outline: none !important;
+}
+.btnfooter:focus, .btnplan:focus, .footeradresse button:focus {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  color: black;
 }
 
 /* Supprime les bordures au focus */
