@@ -512,6 +512,7 @@ background-color: #e5e4e2;
     font-weight: bold;
 }
 
+
 @media (max-width: 600px) {
   .modal-content {
     width: 90%;
