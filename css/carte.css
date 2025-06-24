@@ -569,6 +569,52 @@ background-color: #e5e4e2;
     right: 15px;
 }
 
+    body {
+      font-family: Arial, sans-serif;
+      background: #fffaf0;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    header {
+      background-color: #a52a2a;
+      color: white;
+      padding: 30px;
+      text-align: center;
+    }
+    h1 {
+      margin: 0;
+    }
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+    }
+    details {
+      background: white;
+      margin-bottom: 15px;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+      padding: 15px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    summary {
+      font-weight: bold;
+      font-size: 1.3rem;
+      cursor: pointer;
+    }
+    ul {
+      margin: 10px 0 0 20px;
+    }
+    li {
+      margin-bottom: 8px;
+    }
+    footer {
+      background: #eee;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+    }
 @media (max-width: 768px) {
     .header-nav {
         flex-wrap: wrap;
