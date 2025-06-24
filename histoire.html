@@ -77,6 +77,80 @@
         </div>
     </div>
 </footer>
+<div id="modalOverlay" class="modal-overlay" onclick="closeModal(event)">
+    <div class="modal-content" onclick="event.stopPropagation()">
+        <div class="modal-header">
+            <h2 class="modal-title"> Mentions Légales</h2>
+            <button class="close-btn" onclick="closeModal()">&times;</button>
+        </div>
+        
+        <div class="legal-info">
+            <div class="info-section">
+                <div class="info-title">Identification de l'entreprise</div>
+                <div class="info-content">
+                    <strong>Dénomination sociale :</strong> <span class="highlight">SARL LE PALMIER</span><br>
+                    <strong>Forme juridique :</strong> Société à Responsabilité Limitée<br>
+                    <strong>SIRET :</strong> <span class="highlight">789 412 814 00012</span>
+                </div>
+            </div>
+
+            <div class="info-section">
+                <div class="info-title">42 rue Vacon,Marseille 13001</div>
+                <div class="info-content">
+                    <strong>42 rue Vacon</strong><br>
+                    13001 Marseille<br>
+                    France
+                </div>
+            </div>
+
+            <div class="info-section">
+                <div class="info-title">Contact</div>
+                <div class="info-content">
+                    <strong>Téléphone :</strong> +33 4 65 95 71 68<br>
+                    <strong>Email :</strong> sarahyas@hotmail.fr
+                </div>
+            </div>
+            
+            <div class="info-section">
+                <div class="info-title">Direction de la publication</div>
+                <div class="info-content">
+                    <strong>Gérant :</strong> Mouna Gombracd <br>
+                    <strong>Responsable de publication :</strong> Le Palmier SARL
+                </div>
+            </div>
+
+            <div class="info-section">
+                <div class="info-title">Informations légales</div>
+                <div class="info-content">
+                    <strong>TVA :</strong> FR41789412814<br>
+                    <strong>RCS :</strong> Marseille B 423 789 123<br>
+                    <strong>Activité :</strong> Restauration de type rapide
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+function openModal() {
+    document.getElementById('modalOverlay').style.display = 'block';
+    document.body.style.overflow = 'hidden';
+}
+
+function closeModal(event) {
+    if (!event || event.target.id === 'modalOverlay' || event.target.classList.contains('close-btn')) {
+        document.getElementById('modalOverlay').style.display = 'none';
+        document.body.style.overflow = 'auto';
+    }
+}
+
+document.addEventListener('keydown', function(event) {
+    if (event.key === 'Escape') {
+        closeModal();
+    }
+});
+</script>
+
 <script>
 document.addEventListener('DOMContentLoaded', function() {
     // Créer le menu burger s'il n'existe pas
@@ -113,20 +187,16 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-// Script pour changer le style de la navbar au scroll
+// Votre script de scroll existant reste inchangé
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-    const headerNav = document.querySelector(".header-nav");
-    if (!headerNav) return;
-
     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-        headerNav.classList.add("scrolled");
+        document.querySelector(".header-nav").classList.add("scrolled");
     } else {
-        headerNav.classList.remove("scrolled");
+        document.querySelector(".header-nav").classList.remove("scrolled");
     }
 }
 </script>
-
 </body>
 </html>
