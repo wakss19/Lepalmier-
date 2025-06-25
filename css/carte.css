@@ -19,7 +19,8 @@ body, html {
     position: fixed;
     width: 100%;
     top: 0;
-    z-index: 2;
+    left: 0; /* AJOUTÉ - force la navbar à commencer à gauche */
+    z-index: 1000; /* AUGMENTÉ - pour être sûr qu'elle reste au-dessus */
     box-sizing: border-box;
 }
 
@@ -356,6 +357,7 @@ background-color: #e5e4e2;
         padding: 5px 10px;
         position: fixed;
         top: 0;
+        left: 0; /* AJOUTÉ */
         width: 100%;
         background-color: #e5e4e2;
     }
@@ -574,6 +576,7 @@ font-size: 1.2rem;
 @media (max-width: 480px) { 
     .header-nav {
         padding: 5px 10px;
+        left: 0; /* AJOUTÉ */
     }
 
     .header-logo img.logo {
