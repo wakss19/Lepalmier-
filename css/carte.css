@@ -97,9 +97,14 @@ body, html {
 
 /* Style pour le carrousel */
 
+    .header-titre h1{
+        color: white ;
+        margin-left: 25%;
+    }
+
     .container {
       max-width: 800px;
-      margin: 20px auto;
+      margin: 15% auto;
       
     }
     details {
