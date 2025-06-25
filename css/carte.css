@@ -99,7 +99,9 @@ body, html {
 
     .header-titre h1{
         color: white ;
-        margin-left: 25%;
+        margin-top: 190px;
+        font-size: 1.4rem;
+        padding: 10px;
     }
 
     .container {

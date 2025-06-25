@@ -375,7 +375,7 @@ background-color: #e5e4e2;
     }
 
     .header-menu ul li a {
-font-size: 1.2rem;
+    font-size: 1.2rem;
     display: block;
     width: 92%;
     padding: 9px 8px;
@@ -584,7 +584,7 @@ font-size: 1.2rem;
     .main-image img.photo-animé {
         width: 90%; /* Même largeur sur mobile */
         max-width: 350px; /* Même taille max sur mobile */
-        height: 250px; /* Même hauteur sur mobile */
+        height: 350px; /* Même hauteur sur mobile */
         object-fit: cover;
         margin: 20px auto;
         display: block;
