@@ -97,12 +97,12 @@ body, html {
 
 /* Style pour le carrousel */
 
-    .header-titre p{
-        color: white ;
-        margin-top: 190px;
-        font-size: 1.4rem;
-        padding: 10px;
-    }
+    .header-titre p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* ou la hauteur souhaitée */
+    margin: 0;}
 
     .container {
       max-width: 800px;
