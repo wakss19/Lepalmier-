@@ -101,7 +101,7 @@ body, html {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 18vh; /* ou la hauteur souhaitée */
+    height: 10vh; /* ou la hauteur souhaitée */
     margin: 0;
     font-size: 30px;}
 
