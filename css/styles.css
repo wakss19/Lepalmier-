@@ -591,8 +591,9 @@ body, html {
     }
 
     .main-fond img {
-        height: 100%;
+        height: 119%;
         object-fit: cover;
+        margin-top: 3%;
     }
 
     /* Masquer le titre sur PC */
